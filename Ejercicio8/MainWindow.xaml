@@ -1,0 +1,94 @@
+﻿<Window x:Class="Ejercicio8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio8"
+        mc:Ignorable="d"
+        Title="Cuadros de texto"
+        Icon="text.ico"
+        Height="383.371"
+        Width="446.866">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="46,73,0,0"
+                   TextWrapping="Wrap"
+                   Text="Nombre"
+                   VerticalAlignment="Top"
+                   Width="120"
+                   Height="41" />
+        <TextBox x:Name="nombreTextBox"
+                 HorizontalAlignment="Left"
+                 Height="23"
+                 Tag="Nombre del cliente"
+                 Margin="46,91,0,0"
+                 KeyDown="Tecla_KeyDown"               
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="120" />
+
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="46,158,0,0"
+                   TextWrapping="Wrap"
+                   Text="Apellido"
+                   VerticalAlignment="Top"
+                   Width="120"
+                   Height="41" />
+
+        <TextBox x:Name="apellidoTextBox"
+                 HorizontalAlignment="Left"
+                 Height="23"
+                 Tag="Apellido del cliente"
+                 Margin="46,176,0,0"
+                 KeyDown="Tecla_KeyDown"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="120" />
+
+        <TextBlock HorizontalAlignment="Left"
+                   Margin="46,246,0,0"
+                   TextWrapping="Wrap"
+                   Text="Edad"
+                   VerticalAlignment="Top"
+                   Width="120"
+                   Height="41" />
+
+        <TextBox x:Name="edadTextBox"
+                 HorizontalAlignment="Left"
+                 Height="23"
+                 Margin="46,264,0,0"
+                 Tag="Edad incorrecta"
+                 TextWrapping="Wrap"
+                 KeyDown="Tecla_KeyDown"
+                 VerticalAlignment="Top"
+                 Width="120" />
+
+        <TextBlock x:Name="tipNombreTextBox"
+                   HorizontalAlignment="Left"
+                   Margin="171,91,0,0"
+                   TextWrapping="Wrap"
+                   Opacity="0.5"
+                   VerticalAlignment="Top"
+                   Width="186"
+                   Height="23" />
+        
+        <TextBlock x:Name="tipApellidoTextBox"
+                   HorizontalAlignment="Left"
+                   Margin="171,176,0,0"
+                   TextWrapping="Wrap"
+                   Opacity="0.5"
+                   VerticalAlignment="Top"
+                   Width="186"
+                   Height="23" />
+        
+        <TextBlock x:Name="errorEdadTextBox"
+                   HorizontalAlignment="Left"
+                   Margin="171,264,0,0"
+                   TextWrapping="Wrap"               
+                   Foreground="Red"
+                   VerticalAlignment="Top"
+                   Width="186"
+                   Height="23" />
+
+    </Grid>
+</Window>
