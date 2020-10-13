@@ -17,6 +17,7 @@
                    VerticalAlignment="Top"
                    Width="120"
                    Height="41" />
+        
         <TextBox x:Name="nombreTextBox"
                  HorizontalAlignment="Left"
                  Height="23"
